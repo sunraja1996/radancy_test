@@ -1,0 +1,397 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  line-height: 32px;
+}
+
+button {
+  cursor: pointer;
+}
+
+.social-media img {
+  cursor: pointer;
+}
+
+#navLogo {
+  text-align: center;
+}
+
+#navLogo img {
+  height: 24px;
+  width: 100%;
+  padding: 20px;
+  margin: 0;
+}
+
+#hero {
+  width: 100%;
+  overflow: hidden;
+}
+
+#hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+#headings {
+  text-align: center;
+  padding: 20px 10px;
+  margin: 0 auto;
+}
+
+#headings hr {
+  width: 18%;
+  border: 0;
+  height: 2px;
+  background: #00a777;
+}
+
+#headings h1 {
+  color: #00a777;
+}
+
+p {
+  text-align: left;
+}
+
+#citizensadvantage h2 {
+  color: #00a777;
+}
+
+#citizensadvantage a {
+  color: #759b24;
+  text-decoration: none;
+}
+
+.advantages {
+  margin: 15px;
+  margin-top: 5px;
+}
+
+.advantages hr {
+  border: 0;
+  height: 2px;
+  background: #ddd;
+}
+
+#careers-btn {
+  text-align: center;
+}
+
+.careers-btn {
+  padding: 7px 15px;
+  font-size: 1.2em;
+  background-color: #e97300;
+  color: #ffffff;
+  border: none;
+}
+
+#boxModel {
+  margin: 15px;
+  background-color: #ebf7f5;
+}
+
+#boxModel h2 {
+  background-color: #00a777;
+  text-align: center;
+  padding: 7px 15px;
+  color: #ffffff;
+}
+
+#boxModel p {
+  padding: 5px;
+}
+
+#testimonial-container {
+  margin: 15px;
+  padding: 5px;
+}
+
+.testimonial {
+  text-align: center;
+  position: relative;
+}
+
+.testimonial p {
+  text-align: center;
+}
+
+.testimonial img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.testimonial .quote {
+  position: relative;
+  font-size: 1.2em;
+  padding-left: 40px;
+  width: 75%;
+  text-align: center;
+  z-index: 1;
+}
+
+.testimonial .quote::before {
+  content: "\201C";
+  position: absolute;
+  left: 5px;
+  top: 120px;
+  font-size: 20em;
+  color: #ccc;
+  z-index: -1;
+  opacity: 25%;
+}
+
+.title {
+  color: #00a777;
+  line-height: 20px;
+}
+
+hr {
+  border: 0;
+  height: 2px;
+  background: #00a777;
+}
+
+footer {
+  margin: 15px;
+  padding: 5px;
+  line-height: 16px;
+}
+
+.social-media img {
+  width: 32px;
+  height: 32px;
+  margin-right: 5px;
+}
+
+#footer p {
+  font-size: 12px;
+}
+
+#footer p span {
+  text-decoration: underline;
+}
+
+#footer p:nth-child(2) {
+  color: #989898;
+}
+
+@media screen and (min-width: 769px) and (max-width: 2160px) {
+  body {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    line-height: 24px;
+  }
+  #navLogo {
+    text-align: center;
+    text-align: left;
+  }
+  #navLogo img {
+    height: 24px;
+    width: 100%;
+    padding: 20px;
+    margin: 0;
+    width: auto;
+    height: 20px;
+  }
+  #hero {
+    width: 100%;
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+  }
+  #hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    width: 1440px;
+    height: 768px;
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 768px;
+    object-fit: cover;
+    object-position: center;
+  }
+  .rectangle-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 768px;
+    background-color: #006642;
+    opacity: 95%;
+    clip-path: polygon(60% 0%, 100% 0%, 100% 100%, 40% 100%);
+  }
+  #headings {
+    text-align: center;
+    padding: 20px 10px;
+    margin: 0 auto;
+  }
+  #headings hr {
+    width: 5%;
+    border: 0;
+    height: 2px;
+    background: #00a777;
+  }
+  #headings h1 {
+    color: #00a777;
+    font-size: 2em;
+  }
+  p {
+    text-align: left;
+  }
+  .main-contents {
+    margin: 20px;
+  }
+  #citizensadvantage h2 {
+    color: #00a777;
+    margin-bottom: 0;
+  }
+  #citizensadvantage a {
+    color: #759b24;
+    text-decoration: none;
+  }
+  #citizensadvantage .link {
+    color: #759b24;
+    text-decoration: none;
+  }
+  .advantages {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin: 15px;
+    margin-top: 5px;
+  }
+  .advantages:nth-child(odd) {
+    margin-bottom: 70px;
+  }
+  .advantages hr {
+    border: none;
+    position: relative;
+    top: 50px;
+    border-left: 100px solid #ccc;
+    rotate: 90deg;
+  }
+  .desktop-advantages {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 20px;
+  }
+  .desktop-advantages > div {
+    display: flex;
+    flex-direction: column;
+  }
+  #careers-btn {
+    text-align: center;
+  }
+  .careers-btn {
+    padding: 7px 15px;
+    font-size: 1.2em;
+    background-color: #e97300;
+    color: #ffffff;
+    border: none;
+  }
+  #boxModel {
+    margin: 15px;
+    margin-top: 0;
+    background-color: #ebf7f5;
+  }
+  #boxModel h2 {
+    background-color: #00a777;
+    text-align: center;
+    padding: 7px 15px;
+    color: #ffffff;
+  }
+  #boxModel p {
+    padding: 45px;
+    padding-top: 0;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 0;
+  }
+  #testimonial-container {
+    margin: 15px;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .testimonial {
+    position: relative;
+    margin: 20px;
+  }
+  .testimonial:nth-child(odd) {
+    text-align: center;
+    width: 20%;
+  }
+  .testimonial:nth-child(even) {
+    text-align: center;
+    width: 35%;
+  }
+  .testimonial p {
+    text-align: center;
+  }
+  .testimonial img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  .testimonial .quote {
+    position: relative;
+    font-size: 1.2em;
+    padding-left: 40px;
+    z-index: 1;
+  }
+  .testimonial .quote::before {
+    content: "\201C";
+    position: absolute;
+    left: 5px;
+    top: 120px;
+    font-size: 20em;
+    color: #ccc;
+    z-index: -1;
+    opacity: 25%;
+  }
+  .title {
+    color: #00a777;
+    line-height: 20px;
+  }
+  hr {
+    border: 0;
+    height: 2px;
+    background: #00a777;
+  }
+  footer {
+    margin: 30px;
+    padding: 5px;
+    line-height: 16px;
+  }
+  .social-media img {
+    width: 32px;
+    height: 32px;
+    margin-right: 5px;
+  }
+  #footer p {
+    font-size: 12px;
+    margin-bottom: 25px;
+  }
+  #footer p span {
+    text-decoration: underline;
+  }
+  #footer p:nth-child(2) {
+    color: #989898;
+  }
+}
