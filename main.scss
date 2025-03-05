@@ -23,173 +23,178 @@ button{
 	cursor: pointer;
 }
 
+
 .social-media img{
 	cursor: pointer;
 }
-#navLogo {
-	text-align: center;
-	img {
-		height: 24px;
-		width: 100%;
-		padding: 20px;
-		margin: 0;
+
+@media screen and (max-width: 768px) {
+	#navLogo {
+		text-align: center;
+		img {
+			height: 24px;
+			width: 100%;
+			padding: 20px;
+			margin: 0;
+		}
 	}
-}
-#hero {
-	width: 100%;
-	overflow: hidden;
-	img {
+	#hero {
 		width: 100%;
-		height: 100%;
-		object-fit: cover;
-		object-position: center;
+		overflow: hidden;
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			object-position: center;
+		}
 	}
-}
-#headings {
-	text-align: center;
-	padding: 20px 10px;
-	margin: 0 auto;
+	#headings {
+		text-align: center;
+		padding: 20px 10px;
+		margin: 0 auto;
+		hr {
+			width: 18%;
+			border: 0;
+			height: 2px;
+			background: $stroke-color;
+			margin-bottom: 0;
+		}
+		h1 {
+			color: 	$heading-color;
+			font-size: 24px;
+			font-weight: 500;
+		}
+	}
+	p {
+		text-align: left;
+	}
+	#citizensadvantage {
+		h2 {
+			color: 	$heading-color;	
+			font-size: 22px;
+			margin-bottom: 0;
+			font-weight: 400;
+		}
+		a {
+			color: 	$link-color;	
+			text-decoration: none;
+		}
+		p{
+			margin-top: 0;
+		}
+	}
+	.advantages {
+		margin: 15px;
+		margin-top: 5px;
+	}
+	
+	.desktop-advantages {
+		grid-template-columns: 1fr; 
+		grid-template-rows: auto; 
+	  }
+	
+	  #citizensadvantage {
+		padding: 15px 0;
+	  }
+	
+	  #citizensadvantage:not(:last-child) {
+		border-bottom: 2px solid $stroke;
+	  }
+	
+	
+	#careers-btn {
+		text-align: center;
+	}
+	.careers-btn {
+		padding: 7px 15px;
+		font-size: 1.2em;
+		background-color: $button-color;
+		color: $text-color;
+		border: none;
+	}
+	#boxModel {
+		margin: 15px;
+		background-color: $box-content;
+		h2 {
+			background-color: $stroke-color;
+			text-align: center;
+			padding: 7px 15px;
+			color: $text-color;
+			font-weight: 500;
+		}
+		p {
+			padding: 5px;
+		}
+	}
+	#testimonial-container {
+		margin: 15px;
+		padding: 5px;
+	}
+	.testimonial {
+		text-align: center;
+		position: relative;
+		p {
+			text-align: center;
+		}
+		img {
+			width: 200px;
+			height: 200px;
+			object-fit: cover;
+			border-radius: 50%;
+		}
+		.quote {
+			position: relative;
+			font-size: 1.2em;
+			padding-left: 40px;
+			width: 75%;
+			text-align: center;
+			z-index: 1;
+			&::before {
+				content: "\201C";
+				position: absolute;
+				left: 20px;
+				top: 100px;
+				font-size: 15em;
+				color: #ccc;
+				z-index: -1;
+				opacity: 25%;
+			}
+		}
+	}
+	.title {
+		color: $heading-color;
+		line-height: 20px;
+	}
 	hr {
-		width: 18%;
 		border: 0;
 		height: 2px;
 		background: $stroke-color;
-		margin-bottom: 0;
 	}
-	h1 {
-		color: 	$heading-color;
-		font-size: 24px;
-		font-weight: 500;
-	}
-}
-p {
-	text-align: left;
-}
-#citizensadvantage {
-	h2 {
-		color: 	$heading-color;	
-		font-size: 22px;
-		margin-bottom: 0;
-		font-weight: 400;
-	}
-	a {
-		color: 	$link-color;	
-		text-decoration: none;
-	}
-	p{
-		margin-top: 0;
-	}
-}
-.advantages {
-	margin: 15px;
-	margin-top: 5px;
-}
-
-.desktop-advantages {
-    grid-template-columns: 1fr; 
-    grid-template-rows: auto; 
-  }
-
-  #citizensadvantage {
-    padding: 15px 0;
-  }
-
-  #citizensadvantage:not(:last-child) {
-    border-bottom: 2px solid $stroke;
-  }
-
-
-#careers-btn {
-	text-align: center;
-}
-.careers-btn {
-	padding: 7px 15px;
-	font-size: 1.2em;
-	background-color: $button-color;
-	color: $text-color;
-	border: none;
-}
-#boxModel {
-	margin: 15px;
-	background-color: $box-content;
-	h2 {
-		background-color: $stroke-color;
-		text-align: center;
-		padding: 7px 15px;
-		color: $text-color;
-		font-weight: 500;
-	}
-	p {
+	footer {
+		margin: 15px;
 		padding: 5px;
+		line-height: 16px;
 	}
-}
-#testimonial-container {
-	margin: 15px;
-	padding: 5px;
-}
-.testimonial {
-	text-align: center;
-	position: relative;
-	p {
-		text-align: center;
-	}
-	img {
-		width: 200px;
-		height: 200px;
-		object-fit: cover;
-		border-radius: 50%;
-	}
-	.quote {
-		position: relative;
-		font-size: 1.2em;
-		padding-left: 40px;
-		width: 75%;
-		text-align: center;
-		z-index: 1;
-		&::before {
-			content: "\201C";
-			position: absolute;
-			left: 20px;
-			top: 100px;
-			font-size: 15em;
-			color: #ccc;
-			z-index: -1;
-			opacity: 25%;
+	.social-media {
+		img {
+			width: 32px;
+			height: 32px;
+			margin-right: 5px;
 		}
 	}
-}
-.title {
-	color: $heading-color;
-	line-height: 20px;
-}
-hr {
-	border: 0;
-	height: 2px;
-	background: $stroke-color;
-}
-footer {
-	margin: 15px;
-	padding: 5px;
-	line-height: 16px;
-}
-.social-media {
-	img {
-		width: 32px;
-		height: 32px;
-		margin-right: 5px;
-	}
-}
-#footer {
-	p {
-		font-size: 12px;
-		span {
-			text-decoration: underline;
-		}
-		&:nth-child(2) {
-			color: #989898;
+	#footer {
+		p {
+			font-size: 12px;
+			span {
+				text-decoration: underline;
+			}
+			&:nth-child(2) {
+				color: #989898;
+			}
 		}
 	}
-}
+  }
+
 @media screen and (min-width: 769px) and (max-width:3840px) {
 	body {
 		padding: 0px;
