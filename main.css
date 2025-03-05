@@ -48,10 +48,13 @@ button {
   border: 0;
   height: 2px;
   background: #00a777;
+  margin-bottom: 0;
 }
 
 #headings h1 {
   color: #00a777;
+  font-size: 24px;
+  font-weight: 500;
 }
 
 p {
@@ -60,6 +63,9 @@ p {
 
 #citizensadvantage h2 {
   color: #00a777;
+  font-size: 22px;
+  margin-bottom: 0;
+  font-weight: 400;
 }
 
 #citizensadvantage a {
@@ -67,15 +73,26 @@ p {
   text-decoration: none;
 }
 
+#citizensadvantage p {
+  margin-top: 0;
+}
+
 .advantages {
   margin: 15px;
   margin-top: 5px;
 }
 
-.advantages hr {
-  border: 0;
-  height: 2px;
-  background: #ddd;
+.desktop-advantages {
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+}
+
+#citizensadvantage {
+  padding: 15px 0;
+}
+
+#citizensadvantage:not(:last-child) {
+  border-bottom: 2px solid #ddd;
 }
 
 #careers-btn {
@@ -100,6 +117,7 @@ p {
   text-align: center;
   padding: 7px 15px;
   color: #ffffff;
+  font-weight: 500;
 }
 
 #boxModel p {
@@ -139,9 +157,9 @@ p {
 .testimonial .quote::before {
   content: "\201C";
   position: absolute;
-  left: 5px;
-  top: 120px;
-  font-size: 20em;
+  left: 20px;
+  top: 100px;
+  font-size: 15em;
   color: #ccc;
   z-index: -1;
   opacity: 25%;
@@ -182,7 +200,7 @@ footer {
   color: #989898;
 }
 
-@media screen and (min-width: 769px) and (max-width: 2160px) {
+@media screen and (min-width: 769px) and (max-width: 3840px) {
   body {
     padding: 0px;
     margin: 0px;
@@ -268,30 +286,26 @@ footer {
     text-decoration: none;
   }
   .advantages {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
     margin: 15px;
     margin-top: 5px;
   }
-  .advantages:nth-child(odd) {
-    margin-bottom: 70px;
-  }
-  .advantages hr {
-    border: none;
-    position: relative;
-    top: 50px;
-    border-left: 100px solid #ccc;
-    rotate: 90deg;
-  }
   .desktop-advantages {
     display: grid;
-    grid-template-columns: repeat(2, auto);
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
   }
   .desktop-advantages > div {
     display: flex;
     flex-direction: column;
+  }
+  .desktop-advantages #citizensadvantage:nth-child(odd) {
+    border: none;
+    border-right: 2px solid #ddd;
+    padding-right: 20px;
+  }
+  .desktop-advantages #citizensadvantage:nth-child(even) {
+    padding-left: 20px;
+    border: none;
   }
   #careers-btn {
     text-align: center;
@@ -358,9 +372,9 @@ footer {
   .testimonial .quote::before {
     content: "\201C";
     position: absolute;
-    left: 5px;
-    top: 120px;
-    font-size: 20em;
+    left: 20px;
+    top: 100px;
+    font-size: 15em;
     color: #ccc;
     z-index: -1;
     opacity: 25%;
